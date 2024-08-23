@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice1</title>
+    <link rel="stylesheet" href="practice1.css">
+    
+</head>
+
+<ul class="level1">
+    <li>Automobiles
+        <ul class="level2">
+            <li>BMW
+                <ul class="level3">
+                    <li>X1</li>
+                    <li>X3</li>
+                    <li>Z4</li>
+                </ul>
+            </li>
+            <li>Chevrolet
+                <ul class="level3">
+                    <li>Cobalt</li>
+                    <li>Impala</li>
+                    <li>Volt</li>
+                </ul>
+            </li>
+            <li>Ford
+                <ul class="level3">
+                    <li>Edge</li>
+                    <li>Focus</li>
+                    <li>Mustang</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>Boats
+        <ul class="level2">
+            <li>Sea Ray</li>
+            <li>Cobalt</li>
+        </ul>
+    </li>
+</ul>
+
+
+
+
+
+
+
+
+<div role="main">
+    <button id="showAntique">Antique Cars</button>
+    <button id="showNonAntique">Non-Antique Cars</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Vehicle #</th>
+                <th>Category</th>
+                <th>Year</th>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody id="antiqueCars">
+            <tr>
+                <th>1</th>
+                <td rowspan="2">Antique</td>
+                <td>1957</td>
+                <td>Ford</td>
+                <td>Thunderbird</td>
+                <td>14,000</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>1958</td>
+                <td>Chevrolet</td>
+                <td>Impala</td>
+                <td>3,000</td>
+            </tr>
+        </tbody>
+        <tbody id="nonAntiqueCars">
+            <tr>
+                <th>3</th>
+                <td rowspan="2">NonAntique</td>
+                <td>2012</td>
+                <td>BMW</td>
+                <td>Z4</td>
+                <td>40,000</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>2003</td>
+                <td>Madza</td>
+                <td>Miata</td>
+                <td>5,000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="5">Total:</th>
+                <th>62,000</th>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <script src="practice1.js"></script>
+    <script>
+        init();
+    </script>
+
+
+</div>
+
+</body>
+
+</html>
